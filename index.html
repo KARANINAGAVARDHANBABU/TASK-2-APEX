@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All-in-One Web App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌐 My Web App</h1>
+    </header>
+
+    <main class="grid-layout">
+      <section class="card">
+        <h2>📩 Contact Us</h2>
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" required></textarea>
+
+          <button type="submit">Submit</button>
+          <p id="formMessage"></p>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>📝 To-Do List</h2>
+        <div class="todo-input">
+          <input type="text" id="taskInput" placeholder="Add a task..." />
+          <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="taskList"></ul>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
